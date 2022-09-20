@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 // import "./media.css";
 import newsImage from "./images/cat.jpg";
@@ -86,7 +86,8 @@ mingdan ortiq xalq amaliy san'ati nodir asarlarining hammasini
 bir yula ekspozitsiyasida namoyish qilish imkoniga ega emas.`;
 
 function App() {
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
+  const showMore = false;
 
   // const showMoreNews = () => {
   //   setShowMore(!showMore);
@@ -106,7 +107,7 @@ function App() {
         <div className="main-news">
           <div className="news">
             <div className="images">
-              <img src={newsImage} className="news-image" />
+              <img src={newsImage} alt="museum" className="news-image" />
             </div>
 
             <div className="news-description">
@@ -137,7 +138,7 @@ function App() {
 
           <div className="news">
             <div className="images">
-              <img src={newsImage} className="news-image" />
+              <img src={newsImage} alt="museum" className="news-image" />
             </div>
 
             <div className="news-description">

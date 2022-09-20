@@ -46,7 +46,7 @@
 }
 
 
-img {
+.images>img {
   padding: 0;
   margin: 0;
   width: 512px;
@@ -148,6 +148,30 @@ img {
   .main-news {
     width: 100%;
     height: 100%;
-    background-color: #323232;
+    background-color: rebeccapurple;
   }
+
+  .news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #E2B13C;
+  }
+
+  .images>img {
+    padding: 0;
+    margin: 0;
+    width: 512px;
+    height: 306px;
+    clip-path: none;
+  }
+
+  .images {
+    padding: 8px;
+    background: #323232;
+    clip-path: none;
+  }
+
 }
