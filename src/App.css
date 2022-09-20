@@ -6,6 +6,9 @@
   height: 100vh;
 }
 
+.container {
+  padding: 0;
+}
 
 .title {
   width: 198px;
@@ -156,6 +159,7 @@
     display: flex;
     flex-direction: column;
     background-color: #E2B13C;
+
   }
 
   .images {
@@ -172,12 +176,14 @@
   .news-description {
     width: 100%;
     background-color: red;
+    padding: 0;
+    margin: 0;
   }
 
   .news-description-info {
-    width: 105.5%;
+    width: 100%;
     background-color: #323232;
-
+    transform: none;
   }
 
   .description {
@@ -187,6 +193,7 @@
     color: #FFFFFF;
     font-family: 'Lora', serif;
     padding-top: 20px;
+    width: 100%;
   }
 
   .info {
