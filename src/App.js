@@ -1,6 +1,5 @@
 import React from "react";
-import "./App.css";
-// import "./media.css";
+import "./App.scss";
 import newsImage from "./images/cat.jpg";
 import { HiLocationMarker } from "react-icons/hi";
 import { BsClockFill } from "react-icons/bs";
@@ -92,61 +91,60 @@ function App() {
   // const showMoreNews = () => {
   //   setShowMore(!showMore);
   //   const news = document.getElementsByClassName("news");
-  //   news.body.style.backgroundColor = "red";
   // };
 
   return (
     <div className="App">
       <div className="container">
-        <div className="title">
+        <div className="news__main__title">
           Respublika bo'yicha
-          <h2 className="sub-title"> yangiliklar</h2>
+          <h2 className="news__sub__title"> yangiliklar</h2>
         </div>
 
         {/* news */}
-        <div className="main-news">
-          <div className="news">
-            <div className="images">
+        <div className="news__items">
+          <div className="news__item">
+            <div className="news__images">
               <img src={newsImage} alt="museum" className="news-image" />
             </div>
 
-            <div className="news-description">
-              <div className="news-description-info">
-                <div className="info">
+            <div className="news__descriptions">
+              <div className="news__description__info">
+                <div className="news__info">
                   <h4 className="news-title">Muzey Yangiliklari</h4>
-                  <h4 className="news-location">
-                    <HiLocationMarker className="icon location" />
+                  <h4 className="news__location">
+                    <HiLocationMarker className="icon news__location__icon" />
                     Amaliy san'at muzeyi
                   </h4>
                   <h4 className="news-updated-time">
-                    <BsClockFill className="icon" />
+                    <BsClockFill className="icon " />
                     day(week): time
                   </h4>
                 </div>
-                <p className="description">
+                <p className="news__description">
                   {showMore
                     ? descriptionText
                     : descriptionText.substring(0, 189)}
                 </p>
               </div>
-              <div className="news-time">
-                <p className="news-date">15</p>
-                <p className="news-month">sen</p>
+              <div className="news__time">
+                <p className="news__date">15</p>
+                <p className="news__month">sen</p>
               </div>
             </div>
           </div>
 
-          <div className="news">
-            <div className="images">
+          <div className="news__item">
+            <div className="news__images">
               <img src={newsImage} alt="museum" className="news-image" />
             </div>
 
-            <div className="news-description">
-              <div className="news-description-info">
-                <div className="info">
+            <div className="news__descriptions">
+              <div className="news__description__info">
+                <div className="news__info">
                   <h4 className="news-title">Muzey Yangiliklari</h4>
-                  <h4 className="news-location">
-                    <HiLocationMarker className="icon" />
+                  <h4 className="news__location">
+                    <HiLocationMarker className="icon location news__location__icon" />
                     Amaliy san'at muzeyi
                   </h4>
                   <h4 className="news-updated-time">
@@ -154,15 +152,15 @@ function App() {
                     day(week): time
                   </h4>
                 </div>
-                <p className="description">
+                <p className="news__description">
                   {showMore
                     ? descriptionText
                     : descriptionText.substring(0, 189)}
                 </p>
               </div>
-              <div className="news-time">
-                <p className="news-date">15</p>
-                <p className="news-month">sen</p>
+              <div className="news__time">
+                <p className="news__date">15</p>
+                <p className="news__month">sen</p>
               </div>
             </div>
           </div>
