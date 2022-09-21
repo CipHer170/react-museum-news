@@ -115,7 +115,7 @@ function App() {
                 <div className="info">
                   <h4 className="news-title">Muzey Yangiliklari</h4>
                   <h4 className="news-location">
-                    <HiLocationMarker className="icon" />
+                    <HiLocationMarker className="icon location" />
                     Amaliy san'at muzeyi
                   </h4>
                   <h4 className="news-updated-time">
