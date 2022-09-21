@@ -156,7 +156,7 @@
   padding: 0;
 }
 
-@media screen and (min-width: 390px) and (max-width:797px) {
+@media screen and (min-width: 375px){
   .news__main__title {
     margin-top: 20px;
     margin-left: 10px;
@@ -184,7 +184,7 @@
   }
 
   .news__images>img {
-    width: 390px;
+    width: 375px;
     height: 306px;
     clip-path: none;
   }
