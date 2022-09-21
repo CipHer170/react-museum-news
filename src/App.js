@@ -110,7 +110,7 @@ function App() {
 
             <div className="news__descriptions">
               <div className="news__description__info">
-                <div className="news__info">
+                <div className="news__description__timestamp">
                   <h4 className="news-title">Muzey Yangiliklari</h4>
                   <h4 className="news__location">
                     <HiLocationMarker className="icon news__location__icon" />
@@ -127,43 +127,14 @@ function App() {
                     : descriptionText.substring(0, 189)}
                 </p>
               </div>
-              <div className="news__time">
+              <div className="news__description__time">
                 <p className="news__date">15</p>
                 <p className="news__month">sen</p>
               </div>
             </div>
           </div>
 
-          <div className="news__item">
-            <div className="news__images">
-              <img src={newsImage} alt="museum" className="news-image" />
-            </div>
-
-            <div className="news__descriptions">
-              <div className="news__description__info">
-                <div className="news__info">
-                  <h4 className="news-title">Muzey Yangiliklari</h4>
-                  <h4 className="news__location">
-                    <HiLocationMarker className="icon location news__location__icon" />
-                    Amaliy san'at muzeyi
-                  </h4>
-                  <h4 className="news-updated-time">
-                    <BsClockFill className="icon" />
-                    day(week): time
-                  </h4>
-                </div>
-                <p className="news__description">
-                  {showMore
-                    ? descriptionText
-                    : descriptionText.substring(0, 189)}
-                </p>
-              </div>
-              <div className="news__time">
-                <p className="news__date">15</p>
-                <p className="news__month">sen</p>
-              </div>
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>
